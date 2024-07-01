@@ -1,0 +1,29 @@
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+/* Asterisk wildcard selector to override default styles given by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */ 
+body {
+    background: black;
+}
+
+/* Header */
+header {
+    background-color: black;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+h1, h2 {
+    font-family: 'Caveat', sans-serif;
+    color: darkkhaki;
+    letter-spacing: 2px;
+    margin: 0;
+}

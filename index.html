@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Trivia Safari</title>
+</head>
+<body>
+    <header>
+        <h1>Trivia Safari</h1>
+        <h2>Roam The Savannah of Knowledge!</h2>
+    </header>
+
+    <main>
+        <section id="quiz-section">
+            <div id="username-section">
+                <label for="username">Enter your username:</label>
+                <input type="text" id="username" name="username">
+                <button onclick="startQuiz()">Start Quiz</button>
+            </div>
+
+            <div id="question-section" class="hidden">
+                <h2 id="question-title">Question Title</h2>
+                <div id="options">
+                    <button class="option-btn" onclick="checkAnswer(0)">Option 1</button>
+                    <button class="option-btn" onclick="checkAnswer(1)">Option 2</button>
+                    <button class="option-btn" onclick="checkAnswer(2)">Option 3</button>
+                    <button class="option-btn" onclick="checkAnswer(3)">Option 4</button>
+                </div>
+                <img id="feedback-image" class="hidden" alt="Feedback Image">
+                <p id="feedback-text"></p>
+            </div>
+
+            <div id="score-section" class="hidden">
+                <h2>Quiz Completed</h2>
+                <p id="final-score"></p>
+                <button onclick="resetQuiz()">Restart Quiz</button>
+            </div>
+        </section>
+    </main>
+    
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
