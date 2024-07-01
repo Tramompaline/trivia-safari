@@ -50,5 +50,21 @@ const questions = [
         options: ["Oxygen", "Gold", "Osmium", "Oganesson"],
         answer: "Oxygen"
     }
-
 ];
+
+let currentQuestionIndex = 0;
+let score = 0;
+let username = "";
+
+// Function to start the quiz
+function startQuiz() {
+    username = document.getElementById("username").value;
+    if (!username) {
+        alert("Please enter a username to start the quiz.");
+        return;
+    }
+
+    document.getElementById("username-section").classList.add("hidden");
+    document.getElementById("question-section").classList.remove("hidden");
+    loadQuestion();
+}
