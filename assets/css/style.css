@@ -75,6 +75,15 @@ section#quiz-section {
     background: #555;
 }
 
+/* Feedback styling */
+#feedback-image {
+    max-width: 100px;
+    margin: 1rem 0;
+}
+
+.hidden {
+    display: none;
+}
 
 /* Footer styling */
 footer {
