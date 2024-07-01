@@ -68,3 +68,22 @@ function startQuiz() {
     document.getElementById("question-section").classList.remove("hidden");
     loadQuestion();
 }
+
+// Function to load the current question
+function loadQuestion() {
+    if (currentQuestionIndex >= questions.length) {
+        endQuiz();
+        return;
+    }
+
+    const questionData = questions[currentQuestionIndex];
+    document.getElementById("question-title").innerText = questionData.question;
+
+    const options = document.getElementsByClassName("option-btn");
+    for (let i = 0; i < options.length; i++) {
+        options[i].innerText = questionData.options[i];
+    }
+
+    document.getElementById("feedback-image").classList.add("hidden");
+    document.getElementById("feedback-text").innerText = "";
+}
