@@ -1,39 +1,126 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Trivia Safri
+Welcome to [Trivia Safari](https://tramompaline.github.io/trivia-safari/)!
+This page is a fun multiple choice general knowledge quiz.
 
-Welcome,
+<u>**Design and Styling Choices for Trivia Safari:**</u>
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<u>Color Scheme:</u>
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+Dark shades were used for the header and quiz area to easily distinguish them from the colourful background image. A warm colour tone sets the heading text apart from the dark background.
 
-## Codeanywhere Reminders
+<u>Typography:</u>
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+The page a features an elegant stylised text for headings and a plain text for easy readability of the quiz material.
 
-`python3 -m http.server`
+<u>Layout:</u>
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+The layout is responsive and user-friendly, designed to work seamlessly across all devices. The structure is simple and intuitive, with a clear hierarchy that guides users through the content. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+<u>Navigation:</u>
 
-`http_server`
+The quiz is initiated by the username entering a username and clicking the 'start quiz' button. Multiple choice questions then appear on screen. Once the user has chosen a selection the screen will display whether or not the answer is correct. The next question will display automatically after 2 seconds. After all questions have been answered the users score out of 10 will display and a button gives the user the option to restart the quiz.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+<u>Imagery:</u>
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+A fun colourful image of wild animals evokes the spirit of a safari. A bright green tick and a bright red x serve as feedback images to the question answers.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+<u>Buttons and Links:</u>
 
-To log into the Heroku toolbelt CLI:
+Buttons are styled simplistically with a focus on usability. 
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+<u>Overall Aesthetic:</u>
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+The overall aesthetic of the Trivia Safari is simplistic yet fun and inviting.
 
----
+<u>**Features:**</u>
 
-Happy coding!
+Responsive Design: 
+
+The website is fully responsive and adjusts seamlessly to different screen sizes and devices.
+
+
+
+<u>**Validator Testing**</u>
+
+HTML: W3C Validator returns no errors.
+
+CSS: Jigsaw Validator returns no errors.
+
+<u>**Testing:**</u>
+
+I have confirmed that this site works on Chrome, Firefox and Edge browsers. 
+
+I have confirmed that the site is responsive across the common display sizes.
+
+I have confirmed that the buttons are clickable and function as expected.
+
+I have confirmed that selecting an answer works and displays whether the chosen answer is correct or incorrect.
+
+I have confirmed that the quiz automatically moves to the next question after an answer has been selected.
+
+I have confirmed that the quiz correctly displays the users score after all questions have been answered.
+
+
+<u>**Bugs:**</u>
+
+Questions were falsely displaying that an incorrect answer had been selected. This was fixed by changing the 'answer' part of the quiz question variables in script.js from text to 0, 1, 2 or 3.
+
+Images and styling layout were displaying incorrectly on deployed page. This was fixed by ameding the file paths to the stle.css folder and script.js folder.
+
+
+<u>**Deployment:**</u>
+
+Page was deployed to GitHub pages.
+
+The main branch of this repository is the most current version and has been used for the deployed version of the site. The Code Institute student template was used to create this project.
+
+
+Code Institute Template for GitPod.
+
+- Click Use This Template button.
+
+- Give your repository a name, and description.
+
+- Open GitPod EDI and log into your account.
+
+
+- Click New Workspace button.
+
+- Create a workspace from your project repository by creating a clone.
+
+
+<u>**Creating a clone:**</u>
+
+ - From the repository, click Code.
+
+- In the Clone >> HTTPS section, copy the clone URL for the repository.
+
+
+- Paste a link into the designated area on the CodeAnywhere.
+
+
+<u>**Forking:**</u>
+
+- From the repository, click Fork.
+
+- Give your repository a name.
+
+- Click Create fork.
+
+
+
+
+<u>**Credit:**</u>
+
+Background image generated by Microsoft Copilot.
+
+Quiz questions generated by ChatGPT.
+
+Feedback images found in Google Image search.
+
+'Caveat' font imported from Google Fonts.
+
+
+
+
+## I hope you enjoy using the Trivia Safari quiz! If you have any questions or feedback, please don't hesitate to reach out.
