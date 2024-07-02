@@ -40,7 +40,8 @@ h1, h2 {
 main {
     flex: 1;
     padding: 1rem;
-    background-image: ;
+    background-image: url('../images/background-image.jpg');
+    background-size: cover;
 }
 
 section#quiz-section {
