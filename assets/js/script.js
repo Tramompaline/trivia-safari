@@ -87,3 +87,21 @@ function loadQuestion() {
     document.getElementById("feedback-image").classList.add("hidden");
     document.getElementById("feedback-text").innerText = "";
 }
+
+// Function to check the user's answer
+function checkAnswer(optionIndex) {
+    const questionData = questions[currentQuestionIndex];
+    const isCorrect = optionIndex === questionData.answer;
+    const feedbackImage = document.getElementById("feedback-image");
+
+    if (isCorrect) {
+        score++;
+        feedbackImage.src = "assets/images/correct.png";
+    } else {
+        feedbackImage.src = "assets/images/incorrect.png";
+    }
+
+    feedbackImage.classList.remove("hidden");
+    document.getElementById("feedback-text").innerText = isCorrect ? "Correct!" : "Incorrect!";
+    currentQuestionIndex++;
+}
