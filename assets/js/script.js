@@ -104,4 +104,23 @@ function checkAnswer(optionIndex) {
     feedbackImage.classList.remove("hidden");
     document.getElementById("feedback-text").innerText = isCorrect ? "Correct!" : "Incorrect!";
     currentQuestionIndex++;
+    
+    // Move to next question after 2 seconds
+    setTimeout(loadQuestion, 2000);  
+}
+
+// Function to end the quiz
+function endQuiz() {
+    document.getElementById("question-section").classList.add("hidden");
+    document.getElementById("score-section").classList.remove("hidden");
+    document.getElementById("final-score").innerText = `${username}, your score is: ${score}/${questions.length}`;
+}
+
+// Function to reset the quiz
+function resetQuiz() {
+    currentQuestionIndex = 0;
+    score = 0;
+    document.getElementById("username-section").classList.remove("hidden");
+    document.getElementById("score-section").classList.add("hidden");
+    document.getElementById("username").value = "";
 }
