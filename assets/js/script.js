@@ -13,42 +13,42 @@ const questions = [
     {
         question: "Who wrote the play 'Romeo and Juliet'?",
         options: ["William Shakespeare", "Charles Dickens", "Mark Twain", "Jane Austen"],
-        answer: "William Shakespeare"
+        answer: 0
     },
     {
         question: "What is the largest ocean on Earth?",
         options: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
-        answer: "Pacific Ocean"
+        answer: 3
     },
     {
         question: "Who was the first President of the United States?",
         options: ["Abraham Lincoln", "Thomas Jefferson", "George Washington", "John Adams"],
-        answer: "George Washington"
+        answer: 2
     },
     {
         question: "What is the chemical symbol for water?",
         options: ["H2O", "CO2", "NaCl", "O2"],
-        answer: "H2O"
+        answer: 0
     },
     {
         question: "Which country is home to the kangaroo?",
         options: ["Canada", "Brazil", "Australia", "India"],
-        answer: "Australia"
+        answer: 2
     },
     {
         question: "What is the hardest natural substance on Earth?",
         options: ["Gold", "Iron", "Diamond", "Silver"],
-        answer: "Diamond"
+        answer: 2
     },
     {
         question: "In what year did the Titanic sink?",
         options: ["1905", "1912", "1918", "1923"],
-        answer: "1912"
+        answer: 1
     },
     {
         question: "Which element has the chemical symbol 'O'?",
         options: ["Oxygen", "Gold", "Osmium", "Oganesson"],
-        answer: "Oxygen"
+        answer: 0
     }
 ];
 
