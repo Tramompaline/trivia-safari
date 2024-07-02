@@ -96,9 +96,9 @@ function checkAnswer(optionIndex) {
 
     if (isCorrect) {
         score++;
-        feedbackImage.src = "assets/images/correct.png";
+        feedbackImage.src = "assets/images/correct.jpg";
     } else {
-        feedbackImage.src = "assets/images/incorrect.png";
+        feedbackImage.src = "assets/images/incorrect.jpg";
     }
 
     feedbackImage.classList.remove("hidden");
