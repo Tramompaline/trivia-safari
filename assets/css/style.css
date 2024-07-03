@@ -41,7 +41,7 @@ main {
     flex: 1;
     padding: 1rem;
     background-image: url('../images/background-image.jpg');
-    background-size: cover;
+    background-size: cover; 
 }
 
 section#quiz-section {
