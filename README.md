@@ -26,7 +26,8 @@ A fun colourful image of wild animals evokes the spirit of a safari. A bright gr
 
 <u>Buttons and Links:</u>
 
-Buttons are styled simplistically with a focus on usability. 
+Buttons are styled simplistically with a focus on usability.
+Buttons are disabled after user selects an answer in order to prevent multiple answers being selected for the same question. 
 
 <u>Overall Aesthetic:</u>
 
@@ -89,6 +90,8 @@ I have confirmed that the quiz correctly displays the users score after all ques
 Questions were falsely displaying that an incorrect answer had been selected. This was fixed by changing the 'answer' part of the quiz question variables in script.js from text to 0, 1, 2 or 3.
 
 Images and styling layout were displaying incorrectly on deployed page. This was fixed by ameding the file paths to the stle.css folder and script.js folder.
+
+It was possible to select multiple answers for the same question which caused the quiz to skip following questions. This was fixed by adding a function to disable buttons after the user selected an answer and re-enable when they moved on to the next question.
 
 
 <u>**Deployment:**</u>

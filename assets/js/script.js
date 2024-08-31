@@ -52,6 +52,17 @@ const questions = [
     }
 ];
 
+// Cache DOM elements for easier accessibility
+const usernameInput = document.getElementById("username");
+const usernameSection = document.getElementById("username-section");
+const questionSection = document.getElementById("question-section");
+const scoreSection = document.getElementById("score-section");
+const questionTitle = document.getElementById("question-title");
+const feedbackImage = document.getElementById("feedback-image");
+const feedbackText = document.getElementById("feedback-text");
+const finalScore = document.getElementById("final-score");
+const optionButtons = document.getElementsByClassName("option-btn");
+
 let currentQuestionIndex = 0;
 let score = 0;
 let username = "";
