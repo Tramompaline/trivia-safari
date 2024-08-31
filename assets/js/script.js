@@ -104,6 +104,12 @@ function checkAnswer(optionIndex) {
     feedbackImage.classList.remove("hidden");
     document.getElementById("feedback-text").innerText = isCorrect ? "Correct!" : "Incorrect!";
     currentQuestionIndex++;
+
+    // Disable all answer buttons to prevent multiple clicks
+    const options = document.getElementsByClassName("option-btn");
+    for (let i = 0; i < options.length; i++) {
+        options[i].disabled = true;
+    }
     
     // Move to next question after 2 seconds
     setTimeout(loadQuestion, 2000);  
