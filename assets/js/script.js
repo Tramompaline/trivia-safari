@@ -132,3 +132,14 @@ function resetQuiz() {
     document.getElementById("score-section").classList.add("hidden");
     document.getElementById("username").value = "";
 }
+
+// Event listeners for buttons
+document.getElementById("start-button").addEventListener("click", startQuiz);
+document.getElementById("restart-button").addEventListener("click", resetQuiz);
+
+const optionButtons = document.getElementsByClassName("option-btn");
+for (let i = 0; i < optionButtons.length; i++) {
+    optionButtons[i].addEventListener("click", function() {
+        checkAnswer(parseInt(this.getAttribute("data-index")));
+    });
+}
