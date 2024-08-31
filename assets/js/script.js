@@ -82,6 +82,8 @@ function loadQuestion() {
     const options = document.getElementsByClassName("option-btn");
     for (let i = 0; i < options.length; i++) {
         options[i].innerText = questionData.options[i];
+        // Enable the buttons for the new question
+        options[i].disabled = false;
     }
 
     document.getElementById("feedback-image").classList.add("hidden");
