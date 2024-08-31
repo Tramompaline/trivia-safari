@@ -58,7 +58,7 @@ let username = "";
 
 // Function to start the quiz
 function startQuiz() {
-    username = document.getElementById("username").value;
+    username = document.getElementById("username").value.trim();
     if (!username) {
         alert("Please enter a username to start the quiz.");
         return;
